@@ -1,0 +1,745 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html, body{
+   background-color: beige;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
+
+/*pagina index*/
+
+
+
+.padreINDEX{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "imagenFondo imagenFondo imagenFondo imagenFondo imagenFondo" 
+    "textoINDEX textoINDEX niniaCaballo niniaEscala ninioPatina";
+    gap: 20px;
+    
+}
+
+.paisajeFondo{
+    grid-area: imagenFondo;
+    height: 300px;
+    object-fit:cover;
+
+}
+
+.paisajeFondo img{
+    width: 100%;
+    object-fit:cover;
+    height: 450px;
+    z-index: 10;
+}
+
+.tituloINDEX{
+    position: absolute;
+    grid-area: tituloINDEX;
+    margin-top: 100px;
+    margin-left: 20px;
+    margin-top: 300px;
+    color: beige;
+    font-size: 1em;
+}
+
+
+
+.textoINDEX{
+    grid-area: textoINDEX;
+    margin-top: 100px;
+    margin-left: 20px;
+    text-align: justify;
+    text-justify: inter-word;
+    color:rgb(108, 114, 164);
+
+}
+.parrafoINDEX{
+    position: absolute;
+    margin-top: 360px;
+    margin-left: 20px;
+    color: beige;
+
+}
+
+
+
+.foto2INDEX{
+    grid-area: niniaCaballo;
+}
+
+.foto3INDEX{
+    grid-area: niniaEscala;
+}
+
+.foto4INDEX{
+    grid-area:ninioPatina ;
+}
+
+.foto2INDEX img, .foto3INDEX img, .foto4INDEX img{
+    width: 100%;
+    height: 70%;
+    margin-top: 105px;
+    object-fit: cover;
+    }
+
+/* pagina contacto */
+
+
+.container-lg{
+    margin-top: 100px;
+    color: rgb(108, 114, 164);
+}
+
+
+
+/* pagina actividades */
+
+.padre{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "texto texto acuario acuario" 
+    "bowling rafting sky cuadro-texto";
+    gap: 10px;
+    
+}
+
+.texto{
+    grid-area: texto;
+    width: 90%;
+    height: 80%;
+    object-fit:cover;
+    margin-top: 100px;
+    text-align: justify;
+    text-justify: inter-word;
+    color:rgb(108, 114, 164);
+    margin-left: 20px;
+
+}
+
+.texto h1{
+    text-align:center;
+
+}
+
+.foto1{
+    grid-area: acuario;
+    object-fit: contain;
+    width: 40%;
+    height: 60%;
+}
+
+.foto1 img{
+    width: 240%;
+    height: 168%;
+}
+
+.foto2{
+    margin-left: 20px;
+    margin-top: 20px;
+    color:rgb(108, 114, 164);
+    font-weight: bold;
+
+}
+
+.foto2 img{
+    grid-area: bowling;
+    width: 90%;
+    height: 80%;
+    object-fit:cover;
+
+    
+}
+
+.foto3{
+    margin-top: 20px;
+    color:rgb(108, 114, 164);
+    font-weight: bold;
+
+
+}
+.foto3 img{
+    grid-area: rafting;
+    width: 90%;
+    height: 80%;
+    object-fit:cover;
+
+    
+}
+
+.foto4{
+    margin-top: 20px;
+    color:rgb(108, 114, 164);
+    font-weight: bold;
+
+}
+.foto4 img{
+    grid-area: sky;
+    width: 90%;
+    height: 80%;
+    object-fit:cover;
+
+    
+    
+    
+}
+
+.cuadro-texto{
+    grid-area: cuadro-texto; 
+    text-align: justify;
+    text-justify: inter-word;
+    color:rgb(108, 114, 164);
+    margin-right: 20px;
+    margin-top: 20px;
+  
+    
+
+}
+
+.cuadro-texto h2{
+    font-size: 1.2em;
+}
+
+button{
+    background-color:rgb(144, 55, 55);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 12px;
+    margin-left: 90px;
+    
+}
+
+
+
+
+
+/* barra de navegacion */
+nav a{
+    font-weight: 100;
+    padding-right: 10px;
+}
+
+nav a:hover{
+    color:rgb(48, 119, 200);
+}
+
+nav ul li a{
+    font-weight: bold;
+    list-style: none;
+}
+
+nav ul{    
+    list-style: none;
+    display: inline;
+}
+
+nav ul li{
+    display: inline;
+    margin: 15px;
+}
+
+a{
+    text-decoration: none;
+    color:rgb(108, 114, 164);
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    min-height: 70px;
+    background-color: beige;
+    /* background-color: rgb(245, 245, 245); */
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+    position: absolute;
+    top: 0%;
+}
+
+.logo{
+
+    display: flex;
+    align-items: center;
+    color:rgb(108, 114, 164);
+}
+
+.logo img{
+  height: 50px;
+  margin-right: 10px;
+
+}
+/* pagina Lugares */
+
+.padre-mapa{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "mapa mapa derecha derecha"
+    "mapa mapa derecha derecha";
+
+}
+
+.mapa{
+    grid-area: mapa;
+
+}
+
+.contenidoDerecha{
+    display: flex;
+    flex-direction: column;
+    grid-area: derecha;
+    margin: 160px 50px;
+    align-items: center;
+    
+}
+
+.tarjeta1{
+    background-color:rgb(197, 167, 167);
+    display:flex;    
+    margin: 20px;
+    border-radius: 20px;
+    color:rgb(245, 245, 245);
+
+
+}
+
+.titulo-pagina{
+    color: rgb(108, 114, 164);
+}
+
+.titulo1{
+    font-size: 1.1em;
+}
+
+.imagen1 img{
+    width: 60%;
+    margin: 20px;
+}
+
+.cajatexto1{
+    margin: 20px;
+    overflow: hidden;
+
+}
+
+.tarjeta2{
+    background-color:rgb(197, 167, 167);
+    display:flex;  
+    margin: 20px;
+    border-radius: 20px;
+    color:rgb(245, 245, 245);
+
+}
+
+.titulo2{
+    font-size: 1.1em;
+}
+
+.cajatexto2{
+    margin: 20px;
+}
+
+.imagen2 img{
+   width: 60%;
+   margin: 20px;
+
+    
+}
+
+.tarjeta3{
+    background-color:rgb(197, 167, 167);
+    display:flex;  
+    margin: 20px;
+    border-radius: 20px;
+    color:rgb(245, 245, 245);
+}
+
+.cajatexto3{
+    margin: 20px;
+}
+
+.titulo3{
+    font-size: 1.1em;
+}
+
+.tarjeta3 img{
+    width: 60%;
+    margin: 20px;
+
+}
+
+/* pagina galeria */
+
+.container-padre{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 30vh 2fr 1fr;
+    grid-template-areas: ". titulo-galeria ."
+    "izq-1 centro-2 der-1" 
+    "izq-1 centro-2 der-1";
+    /* place-items: center; */
+    color: rgb(108, 114, 164);
+    
+}
+
+.centro-2{
+    grid-area: centro-2;
+    margin-left: 60px;
+    margin-right: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+/* .der-2{
+    grid-area: der-2;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+} */
+
+.der-1{
+    grid-area:der-1 ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.izq-1{
+    grid-area: izq-1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.texto-izq{
+    margin: 40px 30px;
+    text-align: justify;
+
+}
+.titulo-der{
+margin: 0px;
+}
+.titulo-izq{
+margin-top: 10px;
+}
+.texto-der{
+    margin: 30px;
+    text-align: justify;
+    margin-bottom: 100px;
+}
+
+.titulo-centro{
+margin: 20px;
+}
+
+
+.texto-centro{
+    text-align: justify;
+
+}
+.dire-izq{
+    margin: 30px;
+
+}
+
+/* .izq-2{
+grid-area: izq-2;
+margin: 0 30px 50px 30px; 
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+} */
+
+.imagen-serpentario{
+    grid-area: serpentario;
+    width: 80%;
+    height: 20%;
+}
+.dire-izq{
+    font-size: 0.8em;
+    font-weight: bold;
+    text-align: justify;
+
+}
+.dire-der{
+    font-size: 0.8em;
+    font-weight: bold;
+    text-align: justify;
+    margin: 30px;
+}
+.dire-centro{
+    font-size: 0.8em;
+    font-weight: bold;
+    text-align: justify;
+    margin-top: 10px;
+}
+.titulo-principal-galeria{
+    grid-area: titulo-galeria;
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3em;
+}
+
+.conejo-imagen{
+    width: 80%;
+    height: 90%;
+    grid-area: conejo;
+}
+
+
+/* .centrar-imagen{
+grid-area: adulto-ninio-sky;
+display: flex;
+justify-content: center;
+} */
+
+.sky-adulto-ninio{
+    width: 100%;
+    height: 50%;
+    margin: 40px;
+    
+    
+}
+
+/* footer */
+
+footer{
+    background-color:rgb(210, 185, 185);
+    background-position: center;
+    position: relative;
+    width: 100%;
+
+}
+
+.footerContainer{
+    width: 100%;
+    padding: 5px 5px 5px;
+}
+
+.socialIcons{
+    display:flex;
+    justify-content: center;
+}
+
+.socialIcons a{
+    text-decoration: none;
+    padding: 5px;
+    background-color: rgb(248, 248, 248);
+    margin: 5px;
+    border-radius: 50%;
+}
+
+.socialIcons a i{
+    text-decoration: none;
+    color: rgb(144, 55, 55);
+    border-radius: 50%;
+}
+
+.socialIcons a:hover{
+    background-color: rgb(197, 167, 167);
+    transition: 0.5s;
+}
+
+.socialIcons a:hover i{
+    color:hsl(240, 248, 255);
+    transition: 0.5s;
+}
+
+.footerBottom{
+background-color: rgb(144, 55, 55);
+padding: 5px;
+text-align: center;
+}
+
+.footerBottom p{
+    color:rgb(245, 245, 245);
+    font-size: 0.9em;
+}
+
+.designer{
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+}
+
+
+
+
+/* media querie */
+
+@media only screen and (max-width:700px){
+    header{
+        flex-direction: column;
+    }
+    nav{
+        padding: 10px 0px;
+    }
+    
+    .padre{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "texto" 
+        "texto" 
+        "acuario" 
+        "acuario" 
+        "bowling"
+        "rafting" 
+        "sky" 
+        "cuadro-texto";
+        gap: 20px;
+    }
+
+    .texto{
+        margin-left: 40px;
+    
+    }
+      
+    .foto1{
+        width: 37.5%;
+        height: 60%;
+        margin: 40px;
+    }
+    
+    .foto2{
+        margin-left: 40px;
+        margin-top: 40px;
+        width: 100%;
+    }
+        
+    .foto3{
+        margin-left: 40px;
+        margin-top: 40px;
+        width: 100%;
+    
+    }
+     
+    .foto4{
+        margin-top: 20px;
+        margin-left: 40px;
+        width: 100%;
+        
+    }
+    
+    .cuadro-texto{
+        margin-right: 100px;
+        margin-top: 0px;
+        text-align:center;
+
+        text-justify:distribute;
+
+    }
+    
+    button{
+        margin-left: 120px;
+        
+    }
+    
+    
+    .container-padre{
+        display: grid;
+        grid-template-columns:  1fr;
+        
+        grid-template-areas: "titulo-galeria"
+        "izq-1"
+        "centro-2"
+        " der-1" 
+        ;
+        /* place-items: center; */
+        color: rgb(108, 114, 164);
+        
+
+
+
+/* media querie */
+@media only screen and (max-width:700px){
+    header{
+        flex-direction: column;
+    }
+    nav{
+        padding: 10px 0px;
+    }
+    
+    .padre{
+        display: grid;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "titulo" 
+        "texto" 
+        "niniaCaballo"
+        "niniaEscala" 
+        "ninioPatina"
+    }
+
+    .titulo{
+        grid-area: titulo;
+        margin-left: 20px;
+        margin-top: 300px;
+        color: beige;
+        font-size: 1em;
+    }
+    .foto2 img{
+        margin-left: 40px;
+    }
+    
+    .foto3 img{     
+        margin-left: 40px;
+    }
+    
+    .foto4 img{
+       margin-left: 40px;  
+    }
+    
+    .texto{
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+    }
+
+
+
+
+
+
+    
+}
